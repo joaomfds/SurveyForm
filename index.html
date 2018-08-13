@@ -2,11 +2,9 @@
 <html lang="en">
 
 <head>
-<div>Testing</div>
+  <div>Testing</div>
   <!--  Meta  -->
   <meta charset="UTF-8" />
-  <title id="title">Customer Survey</title>
-
   <!--  Styles  -->
   <link rel="stylesheet" href="index.css">
 </head>
@@ -15,19 +13,19 @@
 
   <h1 id="title">Customer Survey</h1>
   <p id="description">Survey on eating habits</p>
-  <form id="form">
-      <h2 id="subtitle">Demographics:</h2>
+  <form id="survey-form">
+    <h2 id="subtitle">Demographics:</h2>
     <div>
-        <label id="name-label" for="name">* Name: </label>
-      <input type="text" id="name" name="user_name" required>
+      <label id="name-label" for="name">* Name: </label>
+      <input type="text" id="name" name="user_name" required placeholder="Enter you name">
     </div>
     <div>
       <label id="email-label" for="email">Email: </label>
-      <input type="text" id="mail" name="user_mail" required>
+      <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
     </div>
     <div>
       <label id="age-label" for="age">Age: </label>
-      <input type="age" id="age" name="user_age">
+      <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
     </div>
     <div>
       <label id="number-label" for="number">Phone Number: </label>
@@ -38,7 +36,7 @@
       <ul>
         <li>
           <span class="Fruits">Fruits</span>
-          <select id="dropdown" name="frequency">
+          <select id="dropdown" name="frequency" class="dropdown">
             <option>twice daily or more</option>
             <option>daily</option>
             <option>every other day</option>
@@ -50,7 +48,7 @@
         </li>
         <li>
           <span class="Grains">Grains</span>
-          <select id="dropdown" name="frequency">
+          <select id="dropdown" name="frequency" class="dropdown">
             <option>twice daily or more</option>
             <option>daily</option>
             <option>every other day</option>
@@ -62,7 +60,7 @@
         </li>
         <li>
           <span class="Vegetables">Vegetables</span>
-          <select id="dropdown" name="frequency">
+          <select id="dropdown" name="frequency" class="dropdown">
             <option>twice daily or more</option>
             <option>daily</option>
             <option>every other day</option>
@@ -74,7 +72,7 @@
         </li>
         <li>
           <span class="Meat">Meat</span>
-          <select id="dropdown" name="frequency">
+          <select id="dropdown" name="frequency" class="dropdown">
             <option>twice daily or more</option>
             <option>daily</option>
             <option>every other day</option>
@@ -86,7 +84,7 @@
         </li>
         <li>
           <span class="Fish">Fish</span>
-          <select id="dropdown" name="frequency">
+          <select id="dropdown" name="frequency" class="dropdown">
             <option>twice daily or more</option>
             <option>daily</option>
             <option>every other day</option>
@@ -98,7 +96,7 @@
         </li>
         <li>
           <span class="Eggs">Eggs</span>
-          <select id="dropdown" name="frequency">
+          <select id="dropdown" name="frequency" class="dropdown">
             <option>twice daily or more</option>
             <option>daily</option>
             <option>every other day</option>
@@ -110,7 +108,7 @@
         </li>
         <li>
           <span class="Dairy">Dairy</span>
-          <select id="dropdown" name="frequency">
+          <select id="dropdown" name="frequency" class="dropdown">
             <option>twice daily or more</option>
             <option>daily</option>
             <option>every other day</option>
