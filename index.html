@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-  <div>Testing</div>
   <!--  Meta  -->
   <meta charset="UTF-8" />
   <!--  Styles  -->
@@ -16,7 +15,7 @@
   <form id="survey-form">
     <h2 id="subtitle">Demographics:</h2>
     <div>
-      <label id="name-label" for="name">* Name: </label>
+      <label id="name-label" for="name">Name: </label>
       <input type="text" id="name" name="user_name" required placeholder="Enter you name">
     </div>
     <div>
@@ -119,10 +118,53 @@
           </select>
         </li>
       </ul>
-      <input type="submit" value="Submit">
     </div>
+    <div>
+
+
+      <ul id="preferences" style="list-style: none;">
+        <li class="checkbox">
+          <label>
+            <input name="prefer" value="1" type="checkbox" class="userRatings">Front-end Projects</label>
+        </li>
+        <li class="checkbox">
+          <input name="prefer" value="2" type="checkbox" class="userRatings">Back-end Projects</li>
+      </ul>
+
+
+      <ul style="list-style: none;">
+        <li class="radio">
+          <label>Definitely
+            <input name="radio-buttons" value="1" type="radio" class="userRatings">
+          </label>
+        </li>
+        <li class="radio">
+          <label>Maybe
+            <input name="radio-buttons" value="2" type="radio" class="userRatings">
+          </label>
+        </li>
+        <li class="radio">
+          <label>Not sure
+            <input name="radio-buttons" value="3" type="radio" class="userRatings">
+          </label>
+        </li>
+      </ul>
+
+    </div>
+
+
+    <div class="rowTab">
+      <div class="labels">
+        <label for="comments">Any Comments or Suggestions?</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
   </form>
-  <div></div>
+
+
   <!-- Scripts -->
   <script src="scripts/index.js"></script>
 </body>
